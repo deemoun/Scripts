@@ -7,4 +7,4 @@ Welcome to the **Scripts Collection** repository! This repository contains a col
 To get started, clone this repository to your local machine using the following command:
 
 ```bash
-git clone https://github.com/your-username/scripts-collection.git
+git clone https://github.com/deemoun/Scripts.git
