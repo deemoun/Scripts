@@ -3,46 +3,43 @@
 /* General Page Styling */
 body {
     font-family: 'Arial', sans-serif;
-    font-size: 16px;
-    line-height: 1.5;
+    font-size: 14px; /* Reduced font size for better fit */
+    line-height: 1.6; /* Slightly increased line height for readability */
     color: #333;
-    margin: 40px; /* Adjust the margin as needed */
+    margin: 0; /* Remove default margins */
+    padding: 20px; /* Add padding for better presentation */
 }
 
-/* Styling for each slide */
+/* Page margins for the PDF */
 @page {
-    margin: 30mm 20mm; /* Top/Bottom margin: 30mm, Left/Right margin: 20mm */
+    size: A4;
+    margin: 20mm 15mm 20mm 15mm; /* Top, Right, Bottom, Left */
 }
 
 /* Styling for headings */
+h1, h2, h3, h4, h5, h6 {
+    margin-top: 1.5em;
+    margin-bottom: 0.5em;
+    font-weight: bold;
+    color: #00509e; /* Consistent blue for all headings */
+}
+
 h1 {
-    font-size: 2em;
-    color: #003366; /* Dark blue */
+    font-size: 1.8em;
     text-align: center;
-    margin-top: 2em;
-    margin-bottom: 1em;
 }
 
 h2 {
-    font-size: 1.5em;
-    color: #00509e; /* Slightly lighter blue */
+    font-size: 1.6em;
     text-align: center;
-    margin-top: 1.5em;
-    margin-bottom: 0.75em;
 }
 
 h3 {
-    font-size: 1.25em;
-    color: #0073e6; /* Lighter blue */
-    margin-top: 1em;
-    margin-bottom: 0.5em;
+    font-size: 1.4em;
 }
 
 h4, h5, h6 {
-    font-size: 1em;
-    color: #0073e6; /* Consistent blue */
-    margin-top: 1em;
-    margin-bottom: 0.5em;
+    font-size: 1.2em;
 }
 
 /* Styling for paragraphs */
@@ -54,17 +51,22 @@ p {
 /* Code block styling */
 pre, code {
     font-family: 'Courier New', monospace;
+    font-size: 0.9em; /* Reduced font size for code blocks */
     background-color: #f4f4f4;
     padding: 10px;
+    border: 1px solid #e0e0e0;
     border-radius: 5px;
+    white-space: pre-wrap; /* Wrap long lines in code */
+    word-break: break-all; /* Break long words if necessary */
 }
 
 /* Blockquote styling */
 blockquote {
     border-left: 5px solid #0073e6;
-    padding-left: 10px;
+    padding-left: 15px;
     color: #666;
     font-style: italic;
+    margin: 1em 0;
 }
 
 /* List styling */
@@ -77,19 +79,13 @@ li {
     margin-bottom: 0.5em;
 }
 
-/* Horizontal line */
+/* Horizontal line (page break) */
 hr {
     border: none;
     height: 1px;
     background: #ccc;
-    margin: 1em 0;
-}
-
-/* Page break styling for manual control */
-.page-break {
+    margin: 2em 0; /* Increased margin for better separation */
     page-break-before: always;
-    display: block;
-    margin-top: 50px;
 }
 
 /* Table styling */
@@ -97,6 +93,7 @@ table {
     width: 100%;
     border-collapse: collapse;
     margin: 1em 0;
+    word-wrap: break-word; /* Ensure long words wrap inside table cells */
 }
 
 table, th, td {
@@ -106,9 +103,25 @@ table, th, td {
 th, td {
     padding: 8px;
     text-align: left;
+    vertical-align: top; /* Align text to the top for better readability */
 }
 
 th {
     background-color: #f4f4f4;
     font-weight: bold;
+}
+
+/* Image styling */
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+/* Page break styling for manual control */
+.page-break {
+    page-break-before: always;
+    display: block;
+    margin-top: 50px;
 }

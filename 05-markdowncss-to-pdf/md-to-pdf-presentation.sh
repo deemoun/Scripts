@@ -48,8 +48,8 @@ if [ ! -f "$TEMP_FILE" ]; then
     exit 1
 fi
 
-# Add page breaks before each top-level header (#) in the Markdown file
-awk '/^# /{print "\n<div style=\"page-break-before: always;\"></div>\n"}{print}' "$INPUT_FILE" > "$TEMP_FILE"
+# Add page breaks using '---' before each top-level header (#) in the Markdown file
+awk '/^# /{print "\n---\n"}{print}' "$INPUT_FILE" > "$TEMP_FILE"
 
 # Generate the PDF using md-to-pdf with the provided stylesheet
 echo "Generating PDF..."
