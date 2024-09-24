@@ -1,0 +1,114 @@
+/* style.css */
+
+/* General Page Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #333;
+    margin: 40px; /* Adjust the margin as needed */
+}
+
+/* Styling for each slide */
+@page {
+    margin: 30mm 20mm; /* Top/Bottom margin: 30mm, Left/Right margin: 20mm */
+}
+
+/* Styling for headings */
+h1 {
+    font-size: 2em;
+    color: #003366; /* Dark blue */
+    text-align: center;
+    margin-top: 2em;
+    margin-bottom: 1em;
+}
+
+h2 {
+    font-size: 1.5em;
+    color: #00509e; /* Slightly lighter blue */
+    text-align: center;
+    margin-top: 1.5em;
+    margin-bottom: 0.75em;
+}
+
+h3 {
+    font-size: 1.25em;
+    color: #0073e6; /* Lighter blue */
+    margin-top: 1em;
+    margin-bottom: 0.5em;
+}
+
+h4, h5, h6 {
+    font-size: 1em;
+    color: #0073e6; /* Consistent blue */
+    margin-top: 1em;
+    margin-bottom: 0.5em;
+}
+
+/* Styling for paragraphs */
+p {
+    text-align: left;
+    margin: 0.5em 0;
+}
+
+/* Code block styling */
+pre, code {
+    font-family: 'Courier New', monospace;
+    background-color: #f4f4f4;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+/* Blockquote styling */
+blockquote {
+    border-left: 5px solid #0073e6;
+    padding-left: 10px;
+    color: #666;
+    font-style: italic;
+}
+
+/* List styling */
+ul, ol {
+    margin: 1em 0;
+    padding-left: 1.5em;
+}
+
+li {
+    margin-bottom: 0.5em;
+}
+
+/* Horizontal line */
+hr {
+    border: none;
+    height: 1px;
+    background: #ccc;
+    margin: 1em 0;
+}
+
+/* Page break styling for manual control */
+.page-break {
+    page-break-before: always;
+    display: block;
+    margin-top: 50px;
+}
+
+/* Table styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1em 0;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+}
+
+th, td {
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #f4f4f4;
+    font-weight: bold;
+}
