@@ -1,5 +1,6 @@
 # Path to Android Emulator
-$EmulatorPath = "C:\Users\Deemounus\AppData\Local\Android\Sdk\emulator\emulator.exe"
+#$EmulatorPath = "C:\Users\Deemounus\AppData\Local\Android\Sdk\emulator\emulator.exe"
+$EmulatorPath = Join-Path "$env:USERPROFILE\AppData\Local\Android\Sdk\emulator" "emulator.exe"
 
 # Check if emulator exists
 if (-not (Test-Path $EmulatorPath)) {
